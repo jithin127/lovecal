@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="love.css">
+</head>
+<body>
+         <h1>Love Calculator</h1>
+         <input id="boy" type="text" placeholder="Enter boy's name"><br>
+         <input id="girl" type="text" placeholder="Enter girl's name"><br>
+         <button onclick="calculate()">Calculate</button>
+         <p id="result"></p>
+            <script>
+                function calculate() {
+                    let boy = document.getElementById("boy").value;            
+                    let girl = document.getElementById("girl").value;
+                    let result = Math.floor(Math.random() * 100) + 1;
+                    document.getElementById("result").innerText = `${boy} and ${girl} have a ${result}% love match.`;
+                }
+            </script>
+
+</body>
+</html>
